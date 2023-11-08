@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    background:radial-gradient(rgb(211, 162, 162),blue);
+}
+
+/* container  */
+.container{
+    height: 350px;
+    width: 600px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1rem;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* container header  */
+.container-header{
+    /* height: 10%; */
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: var(--fw-header-text);
+    color: white;
+}
+
+
+/* container body  */
+.container-body{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* color box  */
+.color-box{
+    height: 175px;
+    width: 200px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+/* color info  */
+.color-info{
+    height: 100px;
+    width: calc(100% - 270px);
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.color-info .color-value{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.color-info span{
+    color: #000000;
+}
+
+
+/* container footer   */
+.container-footer{
+   
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-footer button{
+border: none;
+    border-radius: 10px;
+    padding: 10px 20px ;
+    background:linear-gradient(yellow,orange);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+}
+
+.container-footer button:hover{
+    background:linear-gradient(orange,yellow);
+    color:whitesmoke;
+    transition: ease 0.9s;
+}
+
+/* responsive design  */
+@media screen and (max-width:768px) {
+
+    .container{
+        height: 400px;
+        width: 350px;
+        padding: 20px 40px;
+        row-gap: .75rem;
+    }
+    .container-body{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .color-box{
+        height: 150px;
+    }
+    .color-box,
+    .color-info{
+        width: 100%;
+    }
+    .color-info{
+        align-items: center;
+    }
+}
